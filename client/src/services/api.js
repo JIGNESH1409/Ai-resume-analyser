@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV
-    ? 'http://localhost:5001/api'
-    : 'https://ai-resume-analyzer-22f8.onrender.com/api');
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  'http://localhost:5001/api';
 
 // Attach the auth token (if present) to every outgoing request
 axios.interceptors.request.use((config) => {
